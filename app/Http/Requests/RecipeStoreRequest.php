@@ -31,7 +31,7 @@ class RecipeStoreRequest extends FormRequest
             'allergens' => 'nullable',
             'steps' => 'required',
             'diet' => 'nullable',
-            'public' => 'nullable|checkbox'
+            'public' => 'nullable|boolean'
 
 
         ];

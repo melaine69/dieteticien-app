@@ -67,7 +67,7 @@
 
         <div>
             <x-input-label for="public" :value="__('Visibilité')" />
-            <x-checkbox-input id="public" name="name"  class="mt-1 block" :value="old('public')"/>
+            <x-checkbox-input id="public" name="public"  class="mt-1 block" :value="old('public', 1)"/>
             <x-input-error class="mt-2" :messages="$errors->get('public')" />
         </div>
 

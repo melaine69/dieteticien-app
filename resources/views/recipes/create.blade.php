@@ -1,8 +1,13 @@
 <x-app-layout>
     <x-slot name="header">
-        <h2 class="font-semibold text-xl text-gray-800 leading-tight">
-            {{ __('Ajouter une recette') }}
-        </h2>
+
+        <div class="flex items-center justify-between">
+            <h2 class="font-semibold text-xl text-gray-800 leading-tight">
+                {{ __('Ajouter une recette') }}
+            </h2>
+
+            <a class="underline text-gray-800 text-sm" href="{{ route('recipes') }}">{{ __('Voir toutes les recettes') }}</a>
+        </div>
     </x-slot>
 
     <div class="py-12">

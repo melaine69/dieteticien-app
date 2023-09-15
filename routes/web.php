@@ -25,9 +25,10 @@ Route::middleware(['auth', 'verified'])->group(function () {
     })->name('dashboard');
 });
 
-Route::get('/recipes/create', [RecipesController::class,'create'])->name('recipes.create');
-
+Route::get('/recipes', [RecipesController::class, 'index'])->name('recipes');
 Route::post('/recipes', [RecipesController::class, 'store'])->name('recipes.store');
+Route::get('/recipes/create', [RecipesController::class, 'create'])->name('recipes.create');
+
 
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');

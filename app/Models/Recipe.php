@@ -9,7 +9,7 @@ class Recipe extends Model
 {
     use HasFactory;
 
-    public $fillable = [
+    protected $fillable = [
         'name',
         'description',
         'preparation_time',
@@ -20,5 +20,9 @@ class Recipe extends Model
         'steps',
         'diet',
         'public'
+    ];
+
+    protected $casts = [
+        'public' => 'boolean'
     ];
 }
