@@ -27,6 +27,8 @@ Route::middleware(['auth', 'verified'])->group(function () {
     Route::get('/users', [UserController::class, 'index'])->name('users');
     Route::post('users/store', [UserController::class, 'store'])->name('users.store');
     Route::get('/users/create', [UserController::class, 'create'])->name('users.create');
+    Route::get('users/{user}/edit', [UserController::class, 'edit'])->name('users.edit');
+    Route::patch('users/{user}/edit', [UserController::class, 'update'])->name('users.update');
 
     Route::get('/recipes', [RecipesController::class, 'index'])->name('recipes');
     Route::post('/recipes', [RecipesController::class, 'store'])->name('recipes.store');

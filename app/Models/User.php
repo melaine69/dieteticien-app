@@ -22,6 +22,8 @@ class User extends Authenticatable
         'firstname',
         'email',
         'password',
+        'allergens',
+        'diets'
     ];
 
     /**
@@ -42,6 +44,8 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
         'password' => 'hashed',
+        'allergens' => 'array',
+        'diets' => 'array'
     ];
     // Permet d'attributer au name le firstname et lastname
     public function getNameAttribute() {

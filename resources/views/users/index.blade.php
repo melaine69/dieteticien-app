@@ -9,8 +9,15 @@
         </div>
     </x-slot>
 
-    <div class="py-12">
+    <div class="py-6">
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
+            @if (session('status'))
+                <div class="mb-4 px-4 py-3 text-teal-900 rounded bg-teal-300">
+                    {!! session('status') !!}
+                </div>
+            @endif
+
+
             <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
                 <div class="p-6">
                     <table class="mb-10 table-auto w-full border-collapse">
@@ -30,7 +37,8 @@
                             <td class="px-2 py-3 text-gray-600 border-b">{{ $user->lastname }}</td>
                             <td class="px-2 py-3 text-gray-600 border-b">{{ $user->email }}</td>
                             <td class="px-2 py-3 text-gray-600 border-b">Administrateur</td>
-                            <td class="px-2 py-3 text-gray-600 border-b">Edit</td>
+                            <td class="px-2 py-3 text-gray-600 border-b">
+                                <a href="{{ route('users.edit', $user) }}">{{ __('Modifier') }} </a> </td>
                         </tr>
                         @endforeach
                         </tbody>
