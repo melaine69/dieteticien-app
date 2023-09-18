@@ -16,6 +16,10 @@
                         {{ __('Tableau de bord') }}
                     </x-nav-link>
 
+                    <x-nav-link :href="route('users.index')" :active="request()->routeIs('users.index')">
+                        {{ __('Utilisateurs') }}
+                    </x-nav-link>
+
                     <x-nav-link :href="route('recipes')" :active="request()->routeIs('recipes')">
                         {{ __('Recettes') }}
                     </x-nav-link>
