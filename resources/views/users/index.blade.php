@@ -36,7 +36,7 @@
                             <td class="px-2 py-3 text-gray-600 border-b">{{ $user->firstname }}</td>
                             <td class="px-2 py-3 text-gray-600 border-b">{{ $user->lastname }}</td>
                             <td class="px-2 py-3 text-gray-600 border-b">{{ $user->email }}</td>
-                            <td class="px-2 py-3 text-gray-600 border-b">Administrateur</td>
+                            <td class="px-2 py-3 text-gray-600 border-b">{{ __("$user->role") }}</td>
                             <td class="px-2 py-3 text-gray-600 border-b">
                                 <a href="{{ route('users.edit', $user) }}">{{ __('Modifier') }} </a> </td>
                         </tr>

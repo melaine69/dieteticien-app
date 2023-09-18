@@ -20,9 +20,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', [PageController::class, 'welcome']);
 
 Route::middleware(['auth', 'verified'])->group(function () {
-    Route::get('/dashboard', function () {
-        return view('dashboard');
-    })->name('dashboard');
+    Route::get('/dashboard', [PageController::class, 'dashboard'])->name('dashboard');
 
     Route::get('/users', [UserController::class, 'index'])->name('users');
     Route::post('users/store', [UserController::class, 'store'])->name('users.store');

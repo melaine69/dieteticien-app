@@ -21,7 +21,9 @@ return new class extends Migration
             $table->rememberToken();
             $table->json('allergens')->nullable();
             $table->json('diets')->nullable();
+            $table->enum('role', ['admin', 'patient'])->default('patient');
             $table->timestamps();
+
         });
     }
 
