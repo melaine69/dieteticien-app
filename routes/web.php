@@ -23,14 +23,15 @@ Route::middleware(['auth', 'verified'])->group(function () {
     Route::get('/dashboard', function () {
         return view('dashboard');
     })->name('dashboard');
-    Route::get('/users', [UserController::class, 'index'])->name('users.index');
+
+    Route::get('/users', [UserController::class, 'index'])->name('users');
+    Route::post('users/store', [UserController::class, 'store'])->name('users.store');
+    Route::get('/users/create', [UserController::class, 'create'])->name('users.create');
+
+    Route::get('/recipes', [RecipesController::class, 'index'])->name('recipes');
+    Route::post('/recipes', [RecipesController::class, 'store'])->name('recipes.store');
+    Route::get('/recipes/create', [RecipesController::class, 'create'])->name('recipes.create');
 });
-
-
-
-Route::get('/recipes', [RecipesController::class, 'index'])->name('recipes');
-Route::post('/recipes', [RecipesController::class, 'store'])->name('recipes.store');
-Route::get('/recipes/create', [RecipesController::class, 'create'])->name('recipes.create');
 
 
 Route::middleware('auth')->group(function () {

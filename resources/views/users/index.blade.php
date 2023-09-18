@@ -5,7 +5,7 @@
                 {{ __('Liste des patients') }}
             </h2>
 
-            <a class="px-3 py-2 font-medium rounded-sm text-white bg-teal-600" href="{{ route('recipes.create') }}">{{ __('Ajouter un patient') }}</a>
+            <a class="px-3 py-2 font-medium rounded-sm text-white bg-teal-600" href="{{ route('users.create') }}">{{ __('Ajouter un patient') }}</a>
         </div>
     </x-slot>
 
@@ -16,8 +16,8 @@
                     <table class="mb-10 table-auto w-full border-collapse">
                         <thead>
                         <tr>
-                            <th class="p-2 text-left">{{ __('Nom') }}</th>
-                            <th class="p-2 text-left" >{{ __('Prénom') }}</th>
+                            <th class="p-2 text-left">{{ __('Prénom') }}</th>
+                            <th class="p-2 text-left" >{{ __('Nom') }}</th>
                             <th class="p-2 text-left">{{ __('Email') }}</th>
                             <th class="p-2 text-left">{{ __('Role') }}</th>
                             <th class="p-2 text-left">{{ __('Actions') }}</th>
@@ -26,8 +26,8 @@
                         <tbody>
                         @foreach($users as $user)
                         <tr>
-                            <td class="px-2 py-3 text-gray-600 border-b">{{ $user->name }}</td>
-                            <td class="px-2 py-3 text-gray-600 border-b">{{ $user->name }}</td>
+                            <td class="px-2 py-3 text-gray-600 border-b">{{ $user->firstname }}</td>
+                            <td class="px-2 py-3 text-gray-600 border-b">{{ $user->lastname }}</td>
                             <td class="px-2 py-3 text-gray-600 border-b">{{ $user->email }}</td>
                             <td class="px-2 py-3 text-gray-600 border-b">Administrateur</td>
                             <td class="px-2 py-3 text-gray-600 border-b">Edit</td>
