@@ -18,11 +18,13 @@ class Recipe extends Model
         'ingredients',
         'allergens',
         'steps',
-        'diet',
+        'diets',
         'public'
     ];
 
     protected $casts = [
-        'public' => 'boolean'
+        'public' => 'boolean',
+        'allergens' => 'array',
+        'diets' => 'array'
     ];
 }

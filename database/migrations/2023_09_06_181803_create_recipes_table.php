@@ -20,9 +20,9 @@ return new class extends Migration
             $table->integer('rest_time')->nullable()->default(0);
             $table->integer('cooking_time')->nullable()->default(0);
             $table->longText('ingredients')->nullable();
-            $table->longText('allergens')->nullable();
             $table->longText('steps');
-            $table->string('diet')->nullable();
+            $table->json('allergens')->nullable();
+            $table->json('diets')->nullable();
             $table->boolean('public')->default(true);
 
             $table->timestamps();
