@@ -19,21 +19,23 @@
 <body class="font-sans antialiased">
 <header class=" flex items-center mx-auto px-6 lg:px-8 py-4 max-w-7xl">
     <div class="text-lg font-bold">
-        {{config('app.name')}}
+        <a href="{{ route('welcome') }}">
+       <img src="assets/logo.png" class="w-40 h-40 fill-current" alt="logo"/>
+    </a>
     </div>
 
     @if (Route::has('login'))
         <div class="flex items-center gap-4 ml-auto">
             @auth
                 <a href="{{ url('/dashboard') }}"
-                   class="font-semibold text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white focus:outline focus:outline-2 focus:rounded-sm focus:outline-red-500">{{ __('Dashboard') }}</a>
+                   class="bg-fuchsia-200 p-3 rounded-xl font-semibold text-gray-900 hover:text-gray-500">{{ __('Dashboard') }}</a>
             @else
                 <a href="{{ route('login') }}"
-                   class="font-semibold text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white focus:outline focus:outline-2 focus:rounded-sm focus:outline-red-500">{{ __('Log in') }}</a>
+                   class="bg-fuchsia-200 p-3 rounded-xl font-semibold text-gray-900 hover:text-gray-500">{{ __('Log in') }}</a>
 
                 @if (Route::has('register'))
                     <a href="{{ route('register') }}"
-                       class="ml-4 font-semibold text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white focus:outline focus:outline-2 focus:rounded-sm focus:outline-red-500">{{ __('Register') }}</a>
+                       class="bg-fuchsia-200 p-3 rounded-xl font-semibold text-gray-900 hover:text-gray-500">{{ __('Register') }}</a>
                 @endif
             @endauth
         </div>

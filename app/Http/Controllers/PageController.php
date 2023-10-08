@@ -22,4 +22,15 @@ class PageController extends Controller
         return view('dashboard', compact('adminCount', 'patientCount', 'recipeCount'));
 
     }
+
+    public function contact() {
+        return view('pages.contact');
+    }
+    public function terms() {
+        return view('pages.terms');
+    }
+
+    public function privacy() {
+        return view('pages.privacy');
+    }
 }

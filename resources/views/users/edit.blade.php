@@ -6,7 +6,7 @@
                 {{ __('Modifier un patient') }}
             </h2>
 
-            <a class="underline text-gray-800 text-sm" href="{{ route('users') }}">{{ __('Voir tous les patients') }}</a>
+            <a class="underline text-fuchsia-900 text-sm" href="{{ route('users') }}">{{ __('Voir tous les patients') }}</a>
         </div>
     </x-slot>
 

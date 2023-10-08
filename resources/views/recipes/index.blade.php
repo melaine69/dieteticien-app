@@ -5,7 +5,7 @@
                 {{ __('Liste des recettes') }}
             </h2>
 
-            <a class="px-3 py-2 font-medium rounded-sm text-white bg-teal-600" href="{{ route('recipes.create') }}">{{ __('Ajouter une recette') }}</a>
+            <a class="px-3 py-2 font-medium rounded-sm bg-fuchsia-200 p-3 text-gray-900 hover:text-gray-500" href="{{ route('recipes.create') }}">{{ __('Ajouter une recette') }}</a>
         </div>
     </x-slot>
 

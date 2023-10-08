@@ -6,7 +6,7 @@
                 {{ __('Ajouter une recette') }}
             </h2>
 
-            <a class="underline text-gray-800 text-sm" href="{{ route('recipes') }}">{{ __('Voir toutes les recettes') }}</a>
+            <a class="underline text-sm text-fuchsia-900" href="{{ route('recipes') }}">{{ __('Voir toutes les recettes') }}</a>
         </div>
     </x-slot>
 

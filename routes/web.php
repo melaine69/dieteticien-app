@@ -17,10 +17,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', [PageController::class, 'welcome']);
-Route::get('/contact', function() { return view('contact'); });
-Route::get('/mentions', function() { return view('terms'); });
-Route::get('/confidentialite', function() { return view('privacy'); });
+Route::get('/', [PageController::class, 'welcome'])->name('welcome');;
+Route::get('/contact', [PageController::class, 'contact'])->name('contact');
+Route::get('/mentions',[PageController::class, 'terms'])->name('terms');
+Route::get('/confidentialite', [PageController::class, 'privacy'])->name('privacy');
 
 Route::middleware(['auth', 'verified'])->group(function () {
     Route::get('/dashboard', [PageController::class, 'dashboard'])->name('dashboard');

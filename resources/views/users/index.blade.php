@@ -5,14 +5,14 @@
                 {{ __('Liste des patients') }}
             </h2>
 
-            <a class="px-3 py-2 font-medium rounded-sm text-white bg-teal-600" href="{{ route('users.create') }}">{{ __('Ajouter un patient') }}</a>
+            <a class="px-3 py-2 font-medium rounded-sm bg-fuchsia-200 p-3 text-gray-900 hover:text-gray-500" href="{{ route('users.create') }}">{{ __('Ajouter un patient') }}</a>
         </div>
     </x-slot>
 
     <div class="py-6">
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
             @if (session('status'))
-                <div class="mb-4 px-4 py-3 text-teal-900 rounded bg-teal-300">
+                <div class="mb-4 px-4 py-3 bg-fuchsia-200 text-gray-600">
                     {!! session('status') !!}
                 </div>
             @endif

@@ -71,7 +71,7 @@
             <x-input-error class="mt-2" :messages="$errors->get('public')" />
         </div>
 
-        <div class="flex items-center gap-4">
+        <div class="flex items-center gap-4>">
             <x-primary-button>{{ __('Créer') }}</x-primary-button>
         </div>
     </form>
