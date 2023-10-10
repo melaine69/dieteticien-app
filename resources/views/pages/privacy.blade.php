@@ -40,7 +40,7 @@
         <p>Si vous avez des questions concernant cette Politique de Confidentialité ou les pratiques de ce site, veuillez nous contacter à :</p>
 
         <p class="text-fuchsia-900">Sandrine Coupart<br>
-            10 rue de l'hôtel de ville - 75001 Paris<br>
+            10 rue de l'hôtel de ville - 14118 CAEN<br>
             04 78 56 90 45<br>
             <a href="mailto:contact@votreadressemail.com" class="text-fuchsia-900">scoupart-dietetique@mail.com</a></p>
 

@@ -9,7 +9,7 @@
         <h2>Coordonnées de contact :</h2>
 
         <p><strong>Cabinet de Diététique : <span class="text-fuchsia-900">Sandrine Coupart </span></strong></p>
-        <p><strong>Adresse :</strong> <span class="text-fuchsia-900">10 rue de l'hôtel de ville - 75001 Paris</span></p>
+        <p><strong>Adresse :</strong> <span class="text-fuchsia-900">10 rue de l'hôtel de ville - 14118 CAEN</span></p>
         <p><strong>Téléphone :</strong> <span class="text-fuchsia-900">04 78 56 90 45</span></p>
         <p><strong>Email :</strong> <a href="mailto:scoupart-dietetique@mail.com" class="text-fuchsia-900">scoupart-dietetique@mail.com</a></p>
     </div>

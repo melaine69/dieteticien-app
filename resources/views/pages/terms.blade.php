@@ -8,7 +8,7 @@
 
         <p><strong>Raison sociale :</strong> <span class="text-fuchsia-900">Cabinet Sandrine Coupart</span></p>
         <p><strong>Forme juridique :</strong> <span class="text-fuchsia-900">SARL</span></p>
-        <p><strong>Adresse :</strong> <span class="text-fuchsia-900">10 rue de l'hôtel de ville - 75001 Paris</span></p>
+        <p><strong>Adresse :</strong> <span class="text-fuchsia-900">10 rue de l'hôtel de ville - 14118 CAEN</span></p>
         <p><strong>Téléphone :</strong> <span class="text-fuchsia-900">01 78 56 90 45</span></p>
         <p><strong>Email :</strong><a href="mailto:contact@votreadressemail.com" class="text-fuchsia-900">scoupart-dietetique@mail.com</a></p>
 

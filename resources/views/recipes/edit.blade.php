@@ -3,7 +3,7 @@
 
         <div class="flex items-center justify-between">
             <h2 class="font-semibold text-xl text-gray-800 leading-tight">
-                {{ __('Ajouter une recette') }}
+                {{ __('Modifier une recette') }}
             </h2>
 
             <a class="underline text-sm text-fuchsia-900" href="{{ route('recipes.index') }}">{{ __('Voir toutes les recettes') }}</a>

@@ -1,4 +1,4 @@
-<nav x-data="{ open: false }" class="bg-white border border-gray-100 p-2">
+<nav x-data="{ open: false }" class="bg-white border border-gray-100">
     <!-- Primary Navigation Menu -->
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex justify-between h-16">
@@ -6,7 +6,7 @@
                 <!-- Logo -->
                 <div class="shrink-0 flex items-center">
                     <a href="{{ route('dashboard') }}">
-                        <img src="assets/logo.png" class=" w-20 h-20 fill-current" alt="logo" />
+                        <img src="{{ asset('assets/logo.png') }}" class=" w-16" alt="{{ config('app.name') }}" />
                     </a>
                 </div>
 
@@ -20,7 +20,7 @@
                         {{ __('Utilisateurs') }}
                     </x-nav-link>
 
-                    <x-nav-link :href="route('recipes')" :active="request()->routeIs('recipes')">
+                    <x-nav-link :href="route('recipes.index')" :active="request()->routeIs('recipes.index')">
                         {{ __('Recettes') }}
                     </x-nav-link>
                 </div>

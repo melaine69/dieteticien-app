@@ -46,7 +46,6 @@
                     <div class="p-2">
                         {{ $users->links() }}
                     </div>
-
                 </div>
             </div>
         </div>

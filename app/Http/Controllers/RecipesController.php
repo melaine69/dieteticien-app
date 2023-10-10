@@ -10,21 +10,26 @@ class RecipesController extends Controller
 
 {
     public function index() {
-        $recipes = Recipe::all();
-
+        $recipes = Recipe::paginate();
         return view('recipes.index', compact('recipes'));
     }
     public function create () {
-
         return view('recipes.create');
     }
 
     public function store(RecipeStoreRequest $request) {
-        $recipe = Recipe::create($request->validated());
+        Recipe::create($request->validated());
 
+        return redirect()->route('recipes.index');
+    }
 
-        return redirect()->route('recipes');
+    public function edit(Recipe $recipe) {
+        return view('recipes.edit', compact('recipe'));
+    }
 
+    public function update(RecipeStoreRequest $request, Recipe $recipe) {
+        $recipe->update($request->validated());
 
+        return view('recipes.edit', compact('recipe'));
     }
 }
